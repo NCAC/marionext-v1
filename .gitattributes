@@ -1,0 +1,59 @@
+# Match with prettier.config.js AND .editorconfig
+
+# Prevent Git to auto detect text files and perform LF normalization.
+* -text
+
+# The item with `binary` is treated as binary file.
+# The item with `eol=lf` is converted to LF on checkin, back to LF on checkout.
+# The item with `eol=crlf` is converted to LF on checkin, back to CRLF on checkout.
+
+# If new extensions are added, please refresh the repo with the following commands.
+# Reference: https://git-scm.com/docs/gitattributes
+# > rm .git/index     # Remove the index to force Git to
+# > git reset         # re-scan the working directory
+# > git status        # Show files that will be normalized
+# > git add -u
+# > git add .gitattributes
+# > git commit -m "Apply end-of-line normalization based on updated .gitattributes file"
+
+*.config          text eol=crlf
+*.css             text eol=lf
+*.editorconfig    text eol=lf
+*.gif             binary
+*.gitattributes   text eol=lf
+*.gitignore       text eol=lf
+*.gitmodules      text eol=lf
+*.html            text eol=lf
+*.ico             binary
+*.jpg             binary
+*.js              text eol=lf
+*.json            text eol=lf
+*.js              text eol=lf
+*.json            text eol=lf
+*.md              text eol=lf
+*.npmignore       text eol=lf
+*.png             binary
+*.styl            text eol=lf
+*.svg             text elf=lf
+*.ts              text eol=lf
+*.ttf             binary
+*.woff            binary
+*.xml             text eol=lf
+
+# NPM "bin" scripts MUST have LF, or else the executable fails to run on Mac.
+# This fnmatch expression only matches files in a "bin" folder and without
+# a period in the filename.
+/*/*/bin/+([!.]) -text
+
+
+# JSON config files use JavaScript-style code comments.  The rule below prevents pedantic
+# syntax highlighters such as GitHub's from highlighting these comments as errors.  Your text editor
+# may also require a special configuration to allow comments in JSON.
+#
+# For more information, see this issue: https://github.com/Microsoft/web-build-tools/issues/1088
+#
+*.json            linguist-language=JSON-with-Comments
+
+
+# dist files, treat them as binary to avoid merge conflicts
+# /*/*/dist/*.js             binary

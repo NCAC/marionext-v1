@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "@marionext/core",
+  "importName": "marionext-core",
+  "version": "1.0.0",
+  "description": "core module marionext",
+  "keywords": [
+    "marionext",
+    "typescript"
+  ],
+  "main": "./src/marionext-core.ts",
+  "dependencies": {
+    "marionnext-event": "file:../marionext-event",
+    "marionext-dom": "file:../marionext-dom",
+    "marionext-lodash": "file:../marionext-lodash",
+    "marionext-data": "file:../marionext-data",
+    "marionext-core-utils": "file:../marionext-core-utils"
+  }
+}

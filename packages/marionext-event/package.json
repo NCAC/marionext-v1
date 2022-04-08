@@ -1,0 +1,9 @@
+{
+  "name": "@marionext/event",
+  "importName": "marionext-event",
+  "description": "Event module for marionext",
+  "main": "./src/marionext-event.ts",
+  "dependencies": {
+    "marionext-lodash": "file:../marionext-lodash"
+  }
+}

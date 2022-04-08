@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "extendedDiagnostics": true,
+    "declaration": true,
+    "lib": ["dom", "es6", "es2017"],
+    "outDir": "dist",
+    "baseUrl": "../../packages"
+  },
+  "include": [
+    "src"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@marionext/lodash",
+  "importName": "marionext-lodash",
+  "version": "1.0.0",
+  "description": "Lodash module for Marionext",
+  "main": "./src/marionext-lodash.ts",
+  "build_types": "./__types"
+}

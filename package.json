@@ -1,0 +1,52 @@
+{
+  "name": "marionext",
+  "version": "1.0.0",
+  "description": "A JS framework based on MarionetteJs",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NCAC/marionext-v1.git"
+  },
+  "author": "NCAC <dev.ncac@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "client",
+    "browser"
+  ],
+  "prettier": {
+    "trailingComma": "none",
+    "semi": true,
+    "quoteProps": "as-needed",
+    "useTabs": false,
+    "singleQuote": false,
+    "bracketSpacing": true
+  },
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "main": "./dist/marionext.js",
+  "types": "./dist/marionext.d.ts",
+  "src": "./src/marionext.ts",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "chalk": "^2.4.2",
+    "dirname-filename-esm": "^1.1.1",
+    "fs-extra": "^10.0.1",
+    "lodash-es": "^4.17.21",
+    "marionext-dom": "link:packages\\marionext-dom",
+    "marionext-lodash": "link:packages\\marionext-lodash",
+    "marionext-vdom": "link:packages\\marionext-vdom",
+    "pretty-hrtime": "^1.0.3",
+    "rollup": "^2.70.1",
+    "rollup-plugin-ts": "^2.0.5",
+    "snabbdom-to-html": "^7.0.0",
+    "typescript": "^4.6.3",
+    "utility-types": "^3.10.0"
+  },
+  "dependencies": {
+    "snabbdom": "^3.4.0"
+  }
+}

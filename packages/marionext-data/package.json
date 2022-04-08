@@ -1,0 +1,12 @@
+{
+  "name": "@marionext/data",
+  "importName": "marionext-data",
+  "description": "data modules for marionext",
+  "main": "./src/marionext-data.ts",
+  "dependencies": {
+    "marionext-event": "file:../marionext-event",
+    "$dom": "file:../marionext-dom",
+    "marionext-lodash": "file:../marionext-lodash",
+    "marionext-core-utils": "file:../marionext-core-utils"
+  }
+}

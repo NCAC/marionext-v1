@@ -1,0 +1,16 @@
+{
+  "name": "marionext-dom",
+  "importName": "marionext-dom",
+  "private": true,
+  "version": "1.0.0",
+  "description": "$dom module for marionext",
+  "keywords": [
+    "marionext",
+    "$dom",
+    "typescript"
+  ],
+  "main": "./src/marionext-$dom.ts",
+  "dependencies": {
+    "marionext-lodash": "file:../marionext-lodash"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@marionext/core-utils",
+  "importName": "marionext-core-utils",
+  "description": "utilities for @marionext/core module",
+  "main": "./src/marionext-core-utils.ts",
+  "dependencies": {
+    "marionext-lodash": "file:../marionext-lodash"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@marionext/vdom",
+  "importName": "marionext-vdom",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dom & Virtual Dom module for marionext",
+  "keywords": [
+    "marionext",
+    "$dom",
+    "typescript"
+  ],
+  "main": "./src/marionext-vdom.ts",
+  "dependencies": {
+    "marionext-lodash": "file:../marionext-lodash"
+  }
+}

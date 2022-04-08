@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "extendedDiagnostics": true,
+    "lib": ["dom", "es5", "es6", "es2017"],
+    "baseUrl": "./packages"
+  },
+  "include": ["src"]
+}
